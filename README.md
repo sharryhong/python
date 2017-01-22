@@ -12,7 +12,7 @@
 만약 python이라고만 쳐서 >>>에 갇히게 된다면?
 -> `exit()` 라고 하면 빠져나올 수 있다. 
 
->>> 에서 한줄씩 직접결과를 보면서 테스트할 수 있다. 
+`>>>` 에서 한줄씩 직접결과를 보면서 테스트할 수 있다. 
 잘 모르는 함수 등을 테스트할 때 편하다. 
 
 ## 파이썬 실행
@@ -67,13 +67,13 @@ if 조건식:
 ````
 
 ## 조건식 
-a < b
-a <= b (등호는 반드시 =앞에온다)
-a == b (같다)
-a != b (같지 않다)
-True and True (and는 두 조건이 모두 참인 경우에만 참)
-True and False
-True or False(or는 두 조건 중 하나라도 참이면 참)
+a < b <br>
+a <= b (등호는 반드시 =앞에온다)<br>
+a == b (같다)<br>
+a != b (같지 않다)<br>
+True and True (and는 두 조건이 모두 참인 경우에만 참)<br>
+True and False<br>
+True or False(or는 두 조건 중 하나라도 참이면 참)<br>
 not True(조건을 뒤집음)
 
 ### if-else
@@ -105,10 +105,12 @@ elif xx:
 
 ## 날짜와 시간 (datetime 라이브러리)
 
+```
 >>> import datetime
 >>> start_time = datetime.datetime.now()
 >>> type(start_time)
 <class 'datetime.datetime'> # start_time변수 값은 datetime class인 것을 알 수 있다. 
+```
 
 datetime에는 replace라는 메소드가 있다. 
 `start_time = start_time.replace(year = 2018, month = 2, day = 1)`
@@ -117,11 +119,13 @@ datetime에는 replace라는 메소드가 있다.
 `start_time = datetime.datetime(2018,1,1)`
 
 오늘부터 지정 날짜까지 얼마나 남았는지 계산해보자. 
+```
 >>> how_long = start_time - datetime.datetime.now()
 >>> type(how_long)
 <class 'datetime.timedelta'>
 # how_long은 timedelta라는 class인 것을 알 수 있다. 
 # timedelta는 days와 seconds로 날짜와 초를 제공해준다. 
+```
 
 ```
 import datetime
