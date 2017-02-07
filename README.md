@@ -221,3 +221,54 @@ print("Mine:", mine)
 input함수에는 print를 할 수 있는 기능이 내장되어 있다. 
 
 input실행시 프로그램이 멈추게 되는데 ctrl+c 를 하게되면 바로 종료 
+
+## list 배열
+여러개의 값을 담을 수 있는 변수
+```
+list1 = ['가위', '바위', '보']
+
+# -1은 뒤에서 첫번째 값
+print(list1[-1])  # 보 
+```
+
+```
+rainbow=['빨강','주황','노랑','초록','파랑','남색','보라']
+#rainbow를 이용해서 first_color에 값을 저장하세요
+first_color = rainbow[0]
+print('무지개의 첫번째 색은 {}이다'.format(first_color) )
+```
+
+#### list 값 추가하기 
+```
+list2 = [1,2,3]
+list2.append(4) #[1,2,3,4]
+list3 = list2 + [4] #[1,2,3,4]
+```
+
+#### list 합치기 
+```
+list4 = list2 + list3 #[1,2,3,4,1,2,3,4]
+```
+
+#### list에 특정 값 있는지 확인 
+```
+n = 5
+check = n in list4
+print(check) #false
+```
+
+#### 특정 위치 값 삭제
+```
+del list4[0] # 첫번째 값 지우기
+
+list4.remove(4) #값이 4인 것 중에 처음 나오는 것 삭제 
+```
+
+## for in 반복문 
+```
+patterns = [1,2,3,4,5]
+for pattern in patterns:
+  print(pattern) # 1 ~ 5까지 출력된다. 
+```
+
+in 뒤에 있는 모든 값을 in 앞에 있는 변수에 한번씩 넣어가면서 블럭을 실행한다. 
